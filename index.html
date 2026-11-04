@@ -156,14 +156,14 @@ body{background-color:#e6d6ad;background-image:radial-gradient(ellipse at 50% 40
 <symbol id="i-sky" viewBox="0 0 240 150"><rect width="240" height="150" fill="url(#h1)" opacity=".5"/><rect y="126" width="240" height="24" fill="#1f1b16"/><g stroke="#1f1b16" stroke-width="2" fill="#efe5c8"><rect x="8" y="84" width="26" height="42"/><rect x="38" y="62" width="22" height="64"/><rect x="190" y="70" width="24" height="56"/><rect x="216" y="94" width="20" height="32"/><path d="M68 126V44l16-4v86zM92 126V40h16v86zM116 126V44l16 4v78z" fill="url(#h2)"/><path d="M62 40h76l-6 8H68z" fill="#1f1b16"/><path d="M150 126q0-24 16-24t16 24z"/></g><rect x="8" y="86" width="26" height="40" fill="url(#win)"/><rect x="38" y="64" width="22" height="62" fill="url(#win)"/><rect x="190" y="72" width="24" height="54" fill="url(#win)"/></symbol>
 <symbol id="i-pod" viewBox="0 0 240 150"><rect width="240" height="150" fill="url(#h1)" opacity=".5"/><rect y="130" width="240" height="20" fill="#1f1b16"/><path d="M84 130l8-60h56l8 60z" fill="#efe5c8" stroke="#1f1b16" stroke-width="2.5"/><rect x="104" y="92" width="32" height="20" fill="url(#h2)"/><path d="M120 70V44M110 44h20" stroke="#1f1b16" stroke-width="3"/><circle cx="120" cy="40" r="5" fill="#1f1b16"/><path d="M40 20v110" stroke="#1f1b16" stroke-width="3"/><path d="M40 22h50v32H40z" fill="url(#h2)" stroke="#1f1b16" stroke-width="2"/></symbol></svg>
 <div id="scroll"><div class="sheet" id="app"></div></div>
-<button id="selbar" type="button">✎ Respond to your highlight</button>
+<button id="selbar" type="button">✎ Take it to the Town Criers</button>
 <nav class="bar" id="bar" aria-label="Sections"></nav>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>// Extra! Extra! — Supabase-connected frontend.
 // Use the public legacy anon key that you confirmed works for signup. Never put a service_role/secret key in browser code.
 // Supabase Row Level Security policies control which records each user can access.
 const SUPABASE_URL = "https://iwfbcwgrikvkbuffjwor.supabase.co";
-const SUPABASE_PUBLIC_KEY = "PASTE_YOUR_WORKING_LEGACY_ANON_KEY_HERE";
+const SUPABASE_PUBLIC_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3ZmJjd2dyaWt2a2J1ZmZqd29yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM2OTE2MTAsImV4cCI6MjEwOTI2NzYxMH0.GlVaEFltpVPeWai8vBpdAu-3wydP-tv2oC9py0xJJyQ";
 
 if (!window.supabase?.createClient) {
   throw new Error("Supabase client failed to load. Check your internet connection or CDN access.");
